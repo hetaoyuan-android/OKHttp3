@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         tv_msg = (TextView) findViewById(R.id.msg);
         tv_dataSize = (TextView) findViewById(R.id.dataSize);
 
+
         //不需要异步，已经处理过了，
         OKHttpUtils.newBuilder().url("http://118.178.241.236/Api/Headhunter/mySpecialist")
                 .post()
