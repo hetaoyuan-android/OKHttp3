@@ -1,7 +1,6 @@
 package com.mengpeng.okhttpdemo.okhttp;
 
 /**
- * Created by 孟鹏 on 2016-11-1-0001.
  * 作用：接收参数param
  */
 

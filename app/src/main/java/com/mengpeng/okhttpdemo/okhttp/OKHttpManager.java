@@ -13,7 +13,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Response;
 
 /**
- * Created by 孟鹏 on 2016-11-2-0002.
  * 作用：处理网络访问，下载数据
  */
 

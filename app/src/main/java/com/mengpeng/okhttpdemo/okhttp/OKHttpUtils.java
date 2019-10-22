@@ -13,10 +13,6 @@ import okhttp3.MediaType;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 
-/**
- * Created by 孟鹏 on 2016-11-1-0001.
- * 作用：
- */
 
 public class OKHttpUtils {
 

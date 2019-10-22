@@ -9,7 +9,6 @@ import java.lang.reflect.Type;
 import okhttp3.Call;
 
 /**
- * Created by 孟鹏 on 2016-11-1-0001.
  * 作用：自定义的OKHttp的callback-----OKHttpCallBack
  */
 

@@ -1,7 +1,6 @@
 package com.mengpeng.okhttpdemo.okhttp;
 
 /**
- * Created by 孟鹏 on 2016-11-2-0002.
  * 作用：
  */
 

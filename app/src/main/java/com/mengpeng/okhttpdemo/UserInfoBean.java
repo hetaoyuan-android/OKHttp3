@@ -1,6 +1,5 @@
 package com.mengpeng.okhttpdemo;
 
-import java.util.List;
 
 /**
  * Created by 孟鹏 on 2016/11/17.
@@ -10,21 +9,32 @@ import java.util.List;
 public class UserInfoBean {
 
     /**
+     * msg : 成功
      * code : 200
-     * msg : 相关数据
-     * data : [{"id":"13","user_name":"1"},{"id":"12","user_name":"1"},{"id":"11","user_name":"1"},{"id":"10","user_name":"1"},{"id":"9","user_name":"1"},{"id":"8","user_name":"1"},{"id":"7","user_name":"1"},{"id":"6","user_name":"1"},{"id":"5","user_name":"1"},{"id":"4","user_name":"1"},{"id":"3","user_name":"1"},{"id":"2","user_name":"1"},{"id":"1","user_name":"1"}]
+     * data : {"descirbe":"优化下载速度","version":"2.1.0"}
      */
 
-    private String code;
     private String msg;
-    private List<DataBean> data;
+    private String code;
+    private DataBean data;
+    private boolean result;
 
-    public String getCode() {
-        return code;
+
+    public boolean isResule() {
+        return result;
     }
 
-    public void setCode(String code) {
-        this.code = code;
+    public void setresult(boolean result) {
+        this.result = result;
+    }
+
+    @Override
+    public String toString() {
+        return "ResonseBean{" +
+                "msg='" + msg + '\'' +
+                ", code='" + code + '\'' +
+                ", data=" + data +
+                '}';
     }
 
     public String getMsg() {
@@ -35,37 +45,53 @@ public class UserInfoBean {
         this.msg = msg;
     }
 
-    public List<DataBean> getData() {
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public DataBean getData() {
         return data;
     }
 
-    public void setData(List<DataBean> data) {
+    public void setData(DataBean data) {
         this.data = data;
     }
 
     public static class DataBean {
         /**
-         * id : 13
-         * user_name : 1
+         * descirbe : 优化下载速度
+         * version : 2.1.0
          */
 
-        private String id;
-        private String user_name;
+        private String descirbe;
+        private String version;
 
-        public String getId() {
-            return id;
+        @Override
+        public String toString() {
+            return "DataBean{" +
+                    "descirbe='" + descirbe + '\'' +
+                    ", version='" + version + '\'' +
+                    '}';
         }
 
-        public void setId(String id) {
-            this.id = id;
+        public String getDescirbe() {
+            return descirbe;
         }
 
-        public String getUser_name() {
-            return user_name;
+        public void setDescirbe(String descirbe) {
+            this.descirbe = descirbe;
         }
 
-        public void setUser_name(String user_name) {
-            this.user_name = user_name;
+        public String getVersion() {
+            return version;
+        }
+
+        public void setVersion(String version) {
+            this.version = version;
         }
     }
 }
