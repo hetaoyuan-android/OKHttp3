@@ -28,4 +28,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
     compile 'com.google.code.gson:gson:2.8.2'
+
+    //将网络请求转化成java bean对象 也可以自定义
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.0.0'
+
+    //retrofit和rxAndroid连接
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
 }
