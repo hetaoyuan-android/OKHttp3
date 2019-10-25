@@ -26,7 +26,7 @@ public class BasePresenter implements Presenter {
     }
 
     @Override
-    public void BindPresentView(PresentView presentView) {
+    public void bindPresentView(PresentView presentView) {
         //与具体视图进行绑定，留个子类进行扩展
     }
 }

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">OKhttpDemo</string>
+    <string name="net_error">请确认网络已连接正确</string>
 </resources>

@@ -1,8 +1,7 @@
-package com.mengpeng.okhttpdemo;
+package com.mengpeng.okhttpdemo.bean;
 
 
 /**
- * Created by 孟鹏 on 2016/11/17.
  * 作用：
  */
 
@@ -18,6 +17,10 @@ public class UserInfoBean {
     private String code;
     private DataBean data;
     private boolean result;
+
+    public UserInfoBean(int netError, String stringResource) {
+
+    }
 
 
     public boolean isResule() {

@@ -8,5 +8,5 @@ public interface Presenter {
     void onDestroy();
 
     //绑定视图
-    void BindPresentView(PresentView presentView);
+    void bindPresentView(PresentView presentView);
 }
